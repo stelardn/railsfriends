@@ -11,8 +11,6 @@ gem "puma", "~> 5.0"
 
 gem "importmap-rails"
 
-gem "pg", "~> 1.3", ">= 1.3.5"
-
 gem "turbo-rails"
 
 gem "stimulus-rails"
@@ -40,21 +38,17 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
-  gem "pg", "~> 1.3", ">= 1.3.5"
-
-  gem 'rails_12factor', '0.0.2'
-
-  # gem "sqlite3", "~> 1.4"
+  gem "sqlite3", "~> 1.4"
 
 end
 
-# group :production do
+group :production do
 
-# #  gem "sqlite3", "~> 1.4"
-#   gem "pg", "~> 1.3", ">= 1.3.5"
-#   #gem 'rails_12factor', '0.0.2'
+#  gem "sqlite3", "~> 1.4"
+  gem "pg", "~> 1.2", ">= 1.2.3"
+  #gem 'rails_12factor', '0.0.2'
 
-# end
+end
 
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
